@@ -16,7 +16,7 @@ body {
 
 .container {
   display: flex;
-  gap: 40px;
+  gap: 400px;
   flex-wrap:wrap;
   justify-content: center;
   align-items: center;
@@ -121,4 +121,5 @@ button:hover {
   background: #00b894;
 
 }
+
 
