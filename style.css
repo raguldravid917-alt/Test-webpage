@@ -1,0 +1,120 @@
+/* General page setup */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #bcc5d6, #e3e8f0);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+/* Flex container for all cards */
+.boxes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  padding: 40px;
+}
+
+/* Individual card */
+.card {
+  position: relative;
+  width: 250px;
+  height: 420px;
+  background: #fff;
+  border-radius: 25px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+  text-align: center;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.2);
+}
+
+/* Top colored section */
+.card-top {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 180px;
+  border-radius: 25px 25px 0 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+}
+
+/* Gradient colors for each top section */
+.red {
+  background: linear-gradient(135deg, #e52d27, #b31217);
+}
+
+.purple {
+  background: linear-gradient(135deg, #8e2de2, #4a00e0);
+}
+
+.blue {
+  background: linear-gradient(135deg, #1e3c72, #2a5298);
+}
+
+.green {
+  background: linear-gradient(135deg, #00b09b, #96c93d);
+}
+
+/* Number inside top section */
+.num {
+  font-size: 60px;
+  font-weight: bold;
+}
+
+/* Title below curve */
+.eng {
+  margin-top: 220px;
+  font-size: 20px;
+  font-weight: bold;
+  color: #333;
+}
+
+/* Paragraph */
+p {
+  font-size: 14px;
+  color: #555;
+  padding: 0 20px;
+  margin: 15px 0 30px;
+}
+
+/* Button */
+.btn {
+  border: none;
+  padding: 8px 20px;
+  border-radius: 20px;
+  color: #fff;
+  font-size: 13px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.red-btn { background-color: #b31217; }
+.purple-btn { background-color: #4a00e0; }
+.blue-btn { background-color: #2a5298; }
+.green-btn { background-color: #00b09b; }
+
+.btn:hover {
+  opacity: 0.85;
+}
+
+/* Responsive layout */
+@media (max-width: 768px) {
+  .card {
+    width: 80%;
+    max-width: 300px;
+  }
+}
